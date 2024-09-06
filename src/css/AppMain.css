@@ -16,3 +16,40 @@
       display: none;
     }
   }
+
+  @media screen and (max-width: 936px) {
+    .content {
+      margin-left: 0;
+    }
+  }
+
+
+
+  .song-card {
+    transition: transform 0.2s ease-in-out;
+    border: none; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  }
+  
+  .song-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .card-img-top {
+    height: 200px; 
+    object-fit: cover;
+  }
+  
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .bi-heart,
+  .bi-heart-fill {
+    font-size: 1.5rem; 
+    cursor: pointer;
+  }
+  

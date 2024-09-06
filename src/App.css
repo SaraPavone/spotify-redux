@@ -21,4 +21,8 @@ body {
   );
 }
 
-
+@media screen and (max-width: 936px) {
+  body {
+    margin-left: 0px;
+  }
+}

@@ -14,7 +14,7 @@ import repeatIcon from "../assets/playerbuttons/repeat.png";
 
 const Player = () => {
   const dispatch = useDispatch();
-  const { search: songs, query } = useSelector((state) => state.songs);
+  const { search: songs } = useSelector((state) => state.songs);
   const { content: favorites } = useSelector((state) => state.favorites);
 
   const currentSong = songs && songs[0] ? songs[0] : null;
@@ -59,7 +59,9 @@ const Player = () => {
           ) : (
             <p>Nessuna canzone selezionata</p>
           )}
+        </Col>
 
+        <Col xs={12}>
           <div className="d-flex justify-content-center w-100 mb-2">
             <Button variant="link" className="text-white">
               <img src={shuffleIcon} alt="shuffle" className="icon" />
@@ -78,7 +80,7 @@ const Player = () => {
             </Button>
           </div>
 
-          <ProgressBar now={60} className="w-50 mb-3 " />
+          <ProgressBar now={50} className="w-50 mb-3 " />
         </Col>
       </Row>
     </div>
